@@ -1,0 +1,28 @@
+# Local Python / Conda environment
+.conda_env/
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# KITTI dataset
+Data/
+
+# Model checkpoints
+checkpoints/
+
+# Package/download caches
+pip_cache/
+
+# Temporary files
+temp/
+
+# Development/archive notebook
+LiDAR_KITTI_Project.ipynb
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS/editor files
+.DS_Store
+Thumbs.db

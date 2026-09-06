@@ -1,0 +1,66 @@
+{
+    "experiment": "KITTI LiDAR BEV Center Detector",
+    "selected_model": "stride4_bev_detector_2000_balanced_best.pt",
+    "training_frames": 2000,
+    "validation_frames": 64,
+    "final_test_frames": 512,
+    "matching_tolerance_m": 1.0,
+    "threshold_source": "validation",
+    "fixed_thresholds": {
+        "Car": 0.4,
+        "Pedestrian": 0.56,
+        "Cyclist": 0.34
+    },
+    "per_class": {
+        "Car": {
+            "gt_objects": 1653,
+            "predictions": 1616,
+            "tp": 1336,
+            "fp": 280,
+            "fn": 317,
+            "precision": 0.8267326732673267,
+            "recall": 0.8082274652147611,
+            "f1": 0.8173753441419395,
+            "mean_localization_error_m": 0.20591424124504992,
+            "median_localization_error_m": 0.0
+        },
+        "Pedestrian": {
+            "gt_objects": 245,
+            "predictions": 137,
+            "tp": 97,
+            "fp": 40,
+            "fn": 148,
+            "precision": 0.708029197080292,
+            "recall": 0.39591836734693875,
+            "f1": 0.5078534031413612,
+            "mean_localization_error_m": 0.07422680522977691,
+            "median_localization_error_m": 0.0
+        },
+        "Cyclist": {
+            "gt_objects": 97,
+            "predictions": 137,
+            "tp": 64,
+            "fp": 73,
+            "fn": 33,
+            "precision": 0.46715328467153283,
+            "recall": 0.6597938144329897,
+            "f1": 0.547008547008547,
+            "mean_localization_error_m": 0.0989276715554297,
+            "median_localization_error_m": 0.0
+        }
+    },
+    "overall_micro": {
+        "tp": 1497,
+        "fp": 393,
+        "fn": 498,
+        "precision": 0.792063492063492,
+        "recall": 0.750375939849624,
+        "f1": 0.7706563706563706
+    },
+    "overall_macro": {
+        "precision": 0.6673050516730505,
+        "recall": 0.6213132156648965,
+        "f1": 0.6240790980972825
+    },
+    "processing_time_seconds": 132.16695330000948
+}

@@ -1,0 +1,3 @@
+Car=0.40
+Pedestrian=0.56
+Cyclist=0.34

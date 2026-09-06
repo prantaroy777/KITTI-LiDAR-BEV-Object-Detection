@@ -1,0 +1,50 @@
+{
+    "dataset": "KITTI 3D Object Detection",
+    "input_bev_shape": [
+        3,
+        500,
+        400
+    ],
+    "output_heatmap_shape": [
+        3,
+        125,
+        100
+    ],
+    "output_stride": 4,
+    "bev_resolution_m": 0.1,
+    "output_resolution_m": 0.4,
+    "matching_tolerance_m": 1.0,
+    "train_frames": 256,
+    "validation_frames": 64,
+    "test_frames": 256,
+    "validation_tuned_thresholds": {
+        "Car": 0.34,
+        "Pedestrian": 0.42000000000000004,
+        "Cyclist": 0.46
+    },
+    "held_out_test_metrics": {
+        "Car": {
+            "precision": 0.801,
+            "recall": 0.715,
+            "f1": 0.756,
+            "mean_localization_error_m": 0.246
+        },
+        "Pedestrian": {
+            "precision": 0.375,
+            "recall": 0.244,
+            "f1": 0.296,
+            "mean_localization_error_m": 0.109
+        },
+        "Cyclist": {
+            "precision": 0.6,
+            "recall": 0.113,
+            "f1": 0.19,
+            "mean_localization_error_m": 0.067
+        },
+        "Overall": {
+            "precision": 0.757,
+            "recall": 0.627,
+            "f1": 0.686
+        }
+    }
+}
